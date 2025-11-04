@@ -23,7 +23,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   const newUser = { id: users.length + 1, name: req.body.name };
   users.push(newUser);
-  res.status(201).json(newUser);
+  res.status(201).json(newUser);//
 });
 
 // Update user
